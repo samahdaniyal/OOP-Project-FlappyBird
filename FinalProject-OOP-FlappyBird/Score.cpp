@@ -20,7 +20,7 @@ void Score:: setter(int n)
     value=n;
 }
 
-void Score::fly()
+void Score::action()
 {
     moverRect = {825, 400, 50, 50};
 

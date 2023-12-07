@@ -12,7 +12,7 @@ protected:
 
 public:
     virtual void draw(); //virtual becuse different for every object.
-    virtual void fly() = 0; //pure virtual becuse this is how an object appers to moves on the screen and is different for every object & there is no definition for this function in this class.
+    virtual void action() = 0; //pure virtual becuse this is how an object appers to moves on the screen and is different for every object & there is no definition for this function in this class.
     Unit();
     Unit(SDL_Rect a, SDL_Rect b);
     SDL_Rect* getMover(); //getter func that returns the moverrect that is then used to check for collisions w/ pipes coins hearts.

@@ -18,7 +18,7 @@ void Score_h :: setter(int n)
     value=n;
 }
 
-void Score_h ::fly()
+void Score_h ::action()
 {
     moverRect = {125, 400, 50, 50};
 

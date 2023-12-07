@@ -19,7 +19,7 @@ Unit :: Unit(SDL_Rect a ,SDL_Rect b)
 
 void Unit :: draw()
 {
-    fly();
+    action();
     SDL_RenderCopy(Drawing::gRenderer, Drawing::assets, &srcRect, &moverRect); //this calling SDL's own function that makes the asset appear on the screen
 }
 

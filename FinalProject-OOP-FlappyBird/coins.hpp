@@ -10,7 +10,7 @@ class coins : public Unit
         bool fall = true; 
     
     public:
-        void fly(); // this will deal with the change in x and/or y coordinates.
+        void action(); // this will deal with the change in x and/or y coordinates.
         coins(); // will initialise srcrect and moverrect
         coins(SDL_Rect x, SDL_Rect y); // overloaded constructor that initialises the x and y values of moverrect with the passed values.
         ~coins(); //default constructor

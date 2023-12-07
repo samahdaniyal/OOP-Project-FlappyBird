@@ -6,6 +6,6 @@ class gamewon: public Unit
 {
     public:
         gamewon();
-        void fly();
+        void action();
         ~gamewon();
 };

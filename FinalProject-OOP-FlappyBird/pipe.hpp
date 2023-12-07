@@ -8,7 +8,7 @@ using namespace std;
 class pipe : public Unit
 {
 public:
-    void fly();
+    void action();
     pipe(SDL_Rect a, SDL_Rect b);
     pipe();
     ~pipe();

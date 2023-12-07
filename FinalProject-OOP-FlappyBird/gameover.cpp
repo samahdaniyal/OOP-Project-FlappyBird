@@ -6,7 +6,7 @@ gameover::gameover()
     srcRect = {91, 323, 112, 76}; //srcRect for to display game over when player loses
 }
 
-void gameover::fly()
+void gameover::action()
 {
     moverRect = {350,150,250,250};
 }

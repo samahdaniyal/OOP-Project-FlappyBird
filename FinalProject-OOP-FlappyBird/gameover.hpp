@@ -6,6 +6,6 @@ class gameover: public Unit
 {
     public:
         gameover(); 
-        void fly();
+        void action();
         ~gameover();
 };

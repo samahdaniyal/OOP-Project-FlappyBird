@@ -9,7 +9,7 @@ class Score_h : public Unit
     int value = 3;
 
     public:
-    void fly();
+    void action();
     void setter(int n);
     void operator +(int n); //operator overloading for ++
     Score_h ();

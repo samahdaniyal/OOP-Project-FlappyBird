@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void bird::fly()
+void bird::action()
 {
     if(obj_state==0){
         srcRect = (SDL_Rect){14, 229, 93, 60}; //bird in up position    
@@ -68,43 +68,47 @@ void bird::handleMove(SDL_Event &e)
             break;
         }
     }
-    if (right) //change in coords wrt keys, basically moves the bird in respective direction.
+    if (right) //change in coords wrt keys, basically moves the bird in respective direction, also effects bird's speed.
     {
-        moverRect.x += 7;
+        moverRect.x += 10;
     }
     if (left)
     {
-        moverRect.x -= 7;
+        moverRect.x -= 10;
     }
 
     if (up)
     {
-        moverRect.y -= 7;
+        moverRect.y -= 10;
     }
     if (down)
     {
-        moverRect.y += 7;
+        moverRect.y += 10;
     }
 
-    if (moverRect.x <= 0) //so that bird doesn't go out of screen, don't want to loop it
+    if (moverRect.x <= 0) //so that bird doesn't go out of screen, don't want to loop it from left
     {
         moverRect.x = 0;
     }
 
-    else if (moverRect.x >= 1000) //so that bird doesn't go out of screen, don't want to loop it
+    else if (moverRect.x >= 1000) //so that bird loops from right to left
     {
         moverRect.x = 0;
     }
 
-    if (moverRect.y < 0) //so that bird doesn't go out of screen, don't want to loop it
+    if (moverRect.y <= 0) //so that bird doesn't go out of screen, don't want to loop it from up/down
     {
         moverRect.y = 0;
     }
 
-    else if (moverRect.y >= 500)//so that bird doesn't go out of screen, don't want to loop it
+    else if (moverRect.y >= 500)//so that bird doesn't go out of screen, don't want to loop it from up/down
     {
         moverRect.y = 500;
     }
+}
+
+bool bird::operator==(Unit* u){
+    return SDL_HasIntersection(u->getMover(), this->getMover());
 }
 
 bird::~bird(){} //default destructor

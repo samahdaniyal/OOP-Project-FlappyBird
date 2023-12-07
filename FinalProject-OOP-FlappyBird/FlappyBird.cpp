@@ -53,7 +53,7 @@ void FlappyBird::drawObjects()
 
     for(Unit* c: coin)
     {
-        if(SDL_HasIntersection(c->getMover(), obj_bird->getMover())) //sees if bird collects coins
+        if(*obj_bird == c) //sees if bird collects coins
         {
             if(running==true){
                 c->setMover(0,700);
@@ -69,7 +69,7 @@ void FlappyBird::drawObjects()
 
     for(Unit* h: hearts) //sees if bird collects hard
     {
-        if(SDL_HasIntersection(h->getMover(), obj_bird->getMover()))
+        if(*obj_bird == h)
         {
             if(running==true){
                 h->setMover(0,700); 
@@ -86,7 +86,7 @@ void FlappyBird::drawObjects()
 
     for(Unit* p: pipes)
     {
-        if(SDL_HasIntersection(p->getMover(), obj_bird->getMover())) //checks for collison between pipes and bird.
+        if(*obj_bird == p) //checks for collison between pipes and bird.
         {
             if(running==true){
                 obj_bird->setMover(0,0);

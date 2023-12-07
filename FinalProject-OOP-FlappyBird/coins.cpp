@@ -1,7 +1,7 @@
 #include "coins.hpp"
 #include "drawing.hpp"
 
-void coins::fly() //this is how the coin moves on the screen.
+void coins::action() //this is how the coin moves on the screen.
 {
     if (obj_state == 0)
     {

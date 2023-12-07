@@ -1,7 +1,7 @@
 #include "pipe.hpp"
 #include "drawing.hpp"
 
-void pipe::fly()
+void pipe::action()
 {
     moverRect.x -= 5;
 }

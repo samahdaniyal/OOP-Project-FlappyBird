@@ -27,7 +27,7 @@ lives::lives(int n)
 }
 
 
-void lives::fly() 
+void lives::action() 
 {
     if (lifeline == 1)
     {

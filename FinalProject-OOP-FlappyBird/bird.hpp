@@ -1,5 +1,8 @@
 #include <SDL.h>
 #include "Unit.hpp"
+#include "coins.hpp"
+#include "heart.hpp"
+#include "pipe.hpp"
 #pragma once
 
 class bird: public Unit
@@ -16,5 +19,6 @@ public:
     bird(); //will be initialised with srcrect and moverrect
     void handleMove(SDL_Event &e); //this handles the movement of the bird in regards to which arrow key is pressed
     ~bird(); //default destructor
-    void fly(); //defines how the bird moves
+    void action(); //defines how the bird moves
+    bool operator==(Unit* u);
 };

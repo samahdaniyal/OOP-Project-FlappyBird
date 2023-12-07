@@ -10,6 +10,6 @@ class lives: public Unit
     public:
         lives();
         lives(int n);
-        void fly();
+        void action();
         ~lives();
 };
