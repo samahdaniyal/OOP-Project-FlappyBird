@@ -28,3 +28,5 @@ g++ *.cpp -std=c++11 -lSDL2 -lSDL2_image -lSDL2_mixer
 Running the game:
 ./a.out
 ![homescreen](https://github.com/samahdaniyal/OOP-Project-FlappyBird/assets/122165292/7c209e36-9a5a-48ad-ba42-76ea9a29206d)
+![home](https://github.com/samahdaniyal/OOP-Project-FlappyBird/assets/122165292/d149aee3-c2a7-4fd3-bd97-e76196f388e0)
+
