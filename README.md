@@ -1,5 +1,5 @@
 # OOP-Project-FlappyBird
-Inspired by the Flappy Bird Game this is our Final Project for Object Oriented Programming & Design Methodologies course offered by Habib University in Fall of 2023. It makes use of SDL libraries for the GUI and tests basic OOP concepts like abstraction, operator overloading, runtime polymorphism, inheritance etc.
+Inspired by the Flappy Bird Game this is my Final Project for Object Oriented Programming & Design Methodologies course offered by Habib University in Fall of 2023. It makes use of SDL libraries for the GUI and tests basic OOP concepts like abstraction, operator overloading, runtime polymorphism, inheritance etc.
 
 How to Compile:
 **THE FILES ABOVE ARE MODIFIED TO RUN ON WINDOWS. YOU MAY NEED TO MAKE THE FOLLOWING CHANGES**
